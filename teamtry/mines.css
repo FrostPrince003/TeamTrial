@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 100vh;
+    background-color: #0000;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    margin-left: 4px;
+    margin-right: 4rem
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: white;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: yellow;
+}
+
+.maintal{
+    display: block;
+    width: 100%;
+    height: auto;
+}
