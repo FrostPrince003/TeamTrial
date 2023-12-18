@@ -128,7 +128,8 @@
     margin-right: 4rem;
     transition: background-color 0.4s;
   }
-  .image-container1 {
+
+.image-container1 {
     position: relative;
     overflow: hidden;
     max-width: 300px;
@@ -138,6 +139,17 @@
     margin-right: 4rem;
     transition: background-color 0.4s;
   }
+
+  /* .image-container1 {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    margin-left: 4px;
+    background-color: white;
+    margin-right: 4rem;
+    transition: background-color 0.4s;
+  } */
   .image-container::before {
     content: "";
     position: absolute;
@@ -146,12 +158,26 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    transform: scaleY(0);
-    transform-origin: top;
+    transform: scaleX(0);
+    transform-origin: left;
     transition: transform 0.4s;
-    background-color: teal;
+    background-color: rgb(236, 252, 13);
   }
+
   .image-container1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+    background-color: rgb(236, 252, 13); */
+  }
+  /* .image-container1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -163,7 +189,7 @@
     transform-origin: left;
     transition: transform 0.4s;
     background-color: teal;
-  }
+  } */
   
 
 /* .image-container::after {
@@ -181,13 +207,14 @@
 .image-container:hover::before{
   transform: scaleY(1);
   /* opacity: 80%; */
-  transform-origin: top;
-}
-.image-container1:hover::before{
-  transform: scaleX(1);
-  /* opacity: 80%; */
   transform-origin: left;
 }
+
+/* .image-container1 :hover::before{
+  transform: scaleY(0);
+  transform-origin: none;
+} */
+
 
 .maintal{
     display: block;
@@ -551,7 +578,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid  images23 " src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid  images23 " src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505431/gtnxrcavr7nikgrbaoam.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -564,7 +591,7 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva Kale</h3>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Sanwara Chandak</h3>
             <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>PRESIDENT</strong></h5>
           </div>
         </div>
@@ -578,8 +605,8 @@
 
           <!-- Image -->
           <!--Thewego view-->
-          <div class=" z-depth-2 mb-4 box image-container1" style="border-radius: 20px;">
-            <img class="img-fluid  images23" src="Prathamesh.png" alt="Sample image">
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid  images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701549619/mybrvgzus6pjoqi2b6xh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Ishankkkkkk?t=JhXHM7EMld81NJICuSirQw&s=08" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -592,7 +619,7 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Ishank Sharma</h3>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva Shinde</h3>
             <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway', sans-serif; font-size: 17px; text-align: center;" id="post-size"><strong>VICE PRESIDENT</strong></h5>
           </div>
         </div>
@@ -607,7 +634,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid  images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid  images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442050/tkdrvcidsjyohy3ifvmb.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -620,7 +647,7 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Nikhil Thakur</h3>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Darshan Kotecha</h3>
             <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>VICE PRESIDENT</strong></h5>
           </div>
         </div>
@@ -641,7 +668,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442050/v15pkwsdetoohaujun38.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -654,7 +681,7 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Jeet Shah</h3>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Kishan Gyamlani</h3>
             <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>GENERAL MANAGER</strong></h5>
           </div>
         </div>
@@ -669,7 +696,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -682,7 +709,7 @@
             </div>
           </div>
           <div>
-            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Raghav Mawani</h3>
+            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Kartik Bhage</h3>
             <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px;text-align: center;" id="post-size"><strong>CHIEF FINANCE OFFICER</strong></h5>
           </div>
         </div>     
@@ -698,7 +725,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505434/smuto8k0nqahonz7hz2t.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="https://twitter.com/Prem_Bhangdiya?t=owZ-rrpzw09nHku0Z4II5Q&s=08" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -711,8 +738,8 @@
             </div>
           </div>
           <div>
-            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">Prem Bhangadia</h3>
-            <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MEDIA DIRECTOR</strong></h5>
+            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway';text-align: center;">SHRAVANI DHOBALE</h3>
+            <h5 class="white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>HUMAN RESOURCE MANAGER</strong></h5>
           </div>
         </div>     
 
@@ -727,7 +754,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505442/kfoupncfwb3jmxycxrdf.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -740,8 +767,8 @@
             </div>
           </div>
           <div>
-            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Rupesh Kapse</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>TECHNICAL HEAD</strong></h5>
+            <h3 class="white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Sakshi Bedmutha</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>START-UP EXECUTIVE</strong></h5>
           </div>
         </div>
       </div>
@@ -759,7 +786,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -772,7 +799,7 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Jayesh Gadre</h3>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Vedant Vedpathak</h3>
             <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>STARTUP EXECUTIVE</strong></h5>
           </div>
         </div>     
@@ -787,8 +814,8 @@
 
           <!-- Image -->
           <!--Thewego view-->
-          <          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+                    <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505437/bb3dfbmyet5jnci8b4qu.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -801,8 +828,8 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Sarthak Turki</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>HUMAN RESOURCE MANAGER</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Pratham Patil</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size">INDUSTRY AND PUBLIC RELATIONS <HEAD></HEAD><strong></strong></h5>
           </div>
         </div>     
 
@@ -817,7 +844,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442051/rcpnjunbcu9ilhruhp25.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="# role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -830,8 +857,8 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva KHATAVKAR</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>GENERAL SECRATARY & DOCUMENTATION HEAD</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Amey Kohawar</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>INDUSTRY AND PUBLIC RELATIONS</strong></h5>
           </div>
         </div>     
 
@@ -846,7 +873,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -859,8 +886,8 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Ojas Golatgaonkar</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>INDUSTRIAL RELATIONS HEAD</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Swarnima Yogi</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>INDUSTRY AND PUBLIC RELATIONS</strong></h5>
           </div>
         </div>     
 
@@ -881,7 +908,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -894,8 +921,8 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Mahak Agarwal</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Kaushik Munde</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>INDUSTRY AND PUBLIC RELATIONS</strong></h5>
           </div>
         </div>     
 
@@ -909,7 +936,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -922,8 +949,8 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva Panegai</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Ketan Choudhari</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font" style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>FINANCE LEADS MANAGER</strong></h5>
           </div>
         </div>     
 
@@ -938,7 +965,7 @@
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442050/qchy7t3y4nn2mtmp4lvh.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -951,23 +978,20 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Chetan Choudhary</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Shailesh Pallod</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>GENERAL SECRETARY</strong></h5>
           </div>
         </div>     
 
       </div>
       <!-- Grid column -->
-
       <!-- Grid column -->
-      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mt-4 mb-1">
-
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-1">
         <div class="mb-4">
-
           <!-- Image -->
           <!--Thewego view-->
           <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
-            <img class="img-fluid imgBx images23" src="Prathamesh.png" alt="Sample image">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442048/jlao1taztkjbiskyjrt7.png" alt="Sample image">
             <div class="mask rgba-black-strong">
               <ul class="social-icon">
                 <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
@@ -980,8 +1004,8 @@
             </div>
           </div>
           <div>
-            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Soham Muchlambe</h3>
-            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>ACTIVE MEMBER</strong></h5>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Parth Sukhia</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>CAMPUS RELATIONS AND COMMUNICATIONS HEAD</strong></h5>
           </div>
         </div>     
 
@@ -991,6 +1015,347 @@
     </div>
     <!--.Third row -->
 
+    <!-- Fourth row -->
+    <div class="row  pb-3">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442052/xkac7biufspehaup1n0f.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:jayesh.22020145@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/jayesh-gadre-88032417b/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>A true gentleman with high professional standards. Launch Pad of extraordinary ideas and initiatives.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Vaibhav Sawate</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>CAMPUS RELATIONS AND COMMUNICATIONS HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+                    <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505457/uqwojhtweuqj2wab2lgf.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:samyak.21810494@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/samyak-jain-6a9306171/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';font-size: 14px;line-height: 20px; text-align: center;"><strong>Mastery in achieving the best out of everyone around him. An exceptional combination of creativity and technical expertise.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Mayur Nimkande</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>TECHNICAL HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701442052/fohdjssxdhryc0ltrgd2.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="# role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:atharva.22020178@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/atharvakhatavkar/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';text-align: center;"><strong>A top grade and clear-headed improviser. His makeshift maneuvers the cell through the tightest corners.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Triambak Kapoor</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong><Table>TECHNICAL HEAD</Table></strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505441/vgjgpijs94hksvc00n1a.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:ojas.21910090@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/ojas-golatgaonkar-132b08197/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway'; text-align: center;"><strong>The networking guru, with the calmest and compassionate demeanor. An astonishing network that has helped the cell reach new heights.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Rohan Vaidhya</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>TECHNICAL HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+    </div>
+    <!-- Fourth row -->
+
+    <!-- Fifth row -->
+    <div class="row  pb-3">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505456/idku65dij5n6svftd0xy.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:jayesh.22020145@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/jayesh-gadre-88032417b/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>A true gentleman with high professional standards. Launch Pad of extraordinary ideas and initiatives.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Bhagyashree Tambake</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MARKETING AND PUBLICITY STRATEGIST</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+                    <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505458/hglbx0pfveyoxee9ow0m.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:samyak.21810494@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/samyak-jain-6a9306171/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';font-size: 14px;line-height: 20px; text-align: center;"><strong>Mastery in achieving the best out of everyone around him. An exceptional combination of creativity and technical expertise.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Manas Shenge</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MARKETING AND PUBLICITY STRATEGIST</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="# role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:atharva.22020178@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/atharvakhatavkar/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';text-align: center;"><strong>A top grade and clear-headed improviser. His makeshift maneuvers the cell through the tightest corners.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Akash Kalshetti</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>MARKETING AND PUBLICITY <HEAD></HEAD></strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="https://res.cloudinary.com/di40y80dw/image/upload/v1701505448/o3tmibbbiuxr9cpv781e.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:ojas.21910090@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/ojas-golatgaonkar-132b08197/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway'; text-align: center;"><strong>The networking guru, with the calmest and compassionate demeanor. An astonishing network that has helped the cell reach new heights.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Malhar Dhakulkar</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>OPERATIONS HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+    </div>
+    <!-- Fifth row -->
+
+<!-- Last Row -->
+    <!-- Fifth row -->
+    <div class="row  pb-3" style="justify-content: center;">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:jayesh.22020145@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/jayesh-gadre-88032417b/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsive black-text" style="font-family: 'Raleway';text-align: center;"><strong>A true gentleman with high professional standards. Launch Pad of extraordinary ideas and initiatives.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Animesh Kothawade</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>OPERATIONS HEAD</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+      
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+                    <div class=" z-depth-2 mb-4 box image-container" style="border-radius: 20px;">
+            <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image">
+            <div class="mask rgba-black-strong">
+              <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="#" role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:samyak.21810494@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/samyak-jain-6a9306171/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="details flex-center">
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway';font-size: 14px;line-height: 20px; text-align: center;"><strong>Mastery in achieving the best out of everyone around him. An exceptional combination of creativity and technical expertise.</strong></p>
+            </div>
+          </div>
+          <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Vyankatesh Kumbhakarna</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>Operations Head</strong></h5>
+          </div>
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mb-5">
+
+        <div class="mb-4">
+
+          <!-- Image -->
+          <!--Thewego view-->
+          <div class=" z-depth-2 mb-4 box image-container1"  style="width: 17rem; height: 22.5rem; margin-left: 15px; border-radius: 20px; text-align: center; align-items: center;">
+            <h3 style="justify-content: center; text-align: center; margin-top: 55%;">You can be the next!</h3>
+            <!-- <img class="img-fluid images23" src="Prathamesh.png" alt="Sample image"> -->
+            <!-- <div class="mask rgba-black-strong"> -->
+              <!-- <ul class="social-icon">
+                <li><a class="tw-ic mr-3 pt-2" href="# role="button"><i class="fab fa-lg fa-twitter"></i></a></li>
+                <li><a class=" mr-3 pt-2" href="mailto:atharva.22020178@viit.ac.in" role="button"><i class="far fa-lg fa-envelope" style="color: #CC0000;"></i></a></li>
+                <li><a class="li-ic mr-3 pt-2" href="https://www.linkedin.com/in/atharvakhatavkar/" role="button"><i class="fab fa-lg fa-linkedin-in"></i></a></li>
+              </ul> -->
+            <!-- </div>
+            <div class="details flex-center" style="font-family: 'Raleway'; text-align: center;" >
+              <p class="p-responsiveS black-text" style="font-family: 'Raleway'; text-align: center;"><strong>You can be the next!</strong></p>
+            </div> -->
+          <!-- </div> -->
+          <!-- <div>
+            <h3 class=" white-text mt-2 mt-sm-4 mb-1 mb-sm-2 resize-font" style="font-family: 'Raleway'; text-align: center;">Atharva KHATAVKAR</h3>
+            <h5 class=" white-text font-weight-bolder mb-1 resize-font " style="font-family: 'Raleway'; font-size: 17px; text-align: center;" id="post-size"><strong>GENERAL SECRATARY & DOCUMENTATION HEAD</strong></h5>
+          </div> -->
+        </div>     
+
+      </div>
+      <!-- Grid column -->
+
+
+      
+    </div>
+    <!-- Fifth row -->
+    <!-- Last row -->
   </section>
   
    
